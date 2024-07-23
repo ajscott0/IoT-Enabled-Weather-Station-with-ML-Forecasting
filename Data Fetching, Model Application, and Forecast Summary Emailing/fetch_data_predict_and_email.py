@@ -132,8 +132,8 @@ def email_results(high_prediction, low_prediction, precip_prediction):
 
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    smtp_username = "jceaser246@gmail.com"
-    smtp_password = "xtha ecgo ojaz xeco"
+    smtp_username = "mySenderEmail"
+    smtp_password = "senderEmailPassword"
 
     server = smtplib.SMTP(smtp_server, smtp_port)
     server.starttls()

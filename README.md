@@ -1,8 +1,8 @@
-## IoT-Enabled-Weather-Station-with-ML-Forecasting
+# IoT-Enabled-Weather-Station-with-ML-Forecasting
 
 This project is comprised of two separate but cooperating parts: the weather station itself, as well as its accompanying software, and the machine learning algorithms that allow for short-term forecasting. The original intent of the project was to make rudimentary weather predictions (the next day's high and low temperature as well as some sort of precipitation prediction) based on data collected from my own constructed weather station - so without the use of radar and upper atmosphere data that is standard in modern forecasting methods. Despite these limitations, the forecasting capabilities of this system are reasonably accurate with the temperature predictions consistently within 2 to 3 degrees Fahrenheit of the actual next day temperatures (interestingly, the prediction for the next day's low temperature is consistently more accurate than the high prediction). Resulting from this project along with the daily next-day forecast, which is automatically emailed to set recipients each morning, is the data visualiation dashboard provided by the Arduino Cloud service that allows in-depth weather monitoring. An image example of this dashboard is included in this repository.
 
-# Obtaining Data
+## Obtaining Data
 
 The components of the weather station are: 
   1. A sealed plastic box that houses the Arduino Nano 33 Iot, all of the wiring necessary for proper data collection by the Arduino program, and two of the seven sensors -         the BH1750 light sensor and the GUVA-S12SD UV sensor.

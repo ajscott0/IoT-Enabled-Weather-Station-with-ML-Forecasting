@@ -174,5 +174,4 @@ def main():
     else:
         print("Failed to retrieve sensor data.")
 
-if __name__ == "__main__":
-    main()
+main()

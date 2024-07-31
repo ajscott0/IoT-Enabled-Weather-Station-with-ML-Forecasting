@@ -1,8 +1,8 @@
 #include <ArduinoIoTCloud.h>
 #include <Arduino_ConnectionHandler.h>
 
-const char SSID[]     = "mySSID";
-const char PASS[]     = "myPassword";
+const char SSID[]     = "******";
+const char PASS[]     = "******";
 
 void onEpochTimeChange();
 

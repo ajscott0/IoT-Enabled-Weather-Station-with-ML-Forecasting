@@ -9,10 +9,10 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-client_id = "myID"
-client_secret = "mySecret"
+client_id = "******"
+client_secret = "******"
 
-thing_id = "thingID"
+thing_id = "******"
 
 def get_access_token(client_id, client_secret):
     token_url = "https://api2.arduino.cc/iot/v1/clients/token"
@@ -118,10 +118,10 @@ def email_results(high_prediction, low_prediction, precip_prediction):
     tomorrow = today + timedelta(days=1)
     date_tomorrow = tomorrow.strftime("%m-%d-%Y")
 
-    sender_email = "mySenderEmail"
-    reciever_emails = ["listHere"] # List of daily email recievers
+    sender_email = "******"
+    reciever_emails = ["******", "******", "******"] # List of daily email recievers
     subject = f"Weather Prediction for {date_tomorrow}"
-    body = f"Forecast for {date_tomorrow} in New Windsor, MD:\n\nHigh Temperature: {high_prediction:.1f} (F)\nLow Temperature: {low_prediction:.1f} (F)\nRain today?: {precip_prediction}"
+    body = f"Forecast for {date_tomorrow} in ******:\n\nHigh Temperature: {high_prediction:.1f} (F)\nLow Temperature: {low_prediction:.1f} (F)\nRain today?: {precip_prediction}"
     
     message = MIMEMultipart()
     message["From"] = sender_email
@@ -132,8 +132,8 @@ def email_results(high_prediction, low_prediction, precip_prediction):
 
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    smtp_username = "mySenderEmail"
-    smtp_password = "senderEmailPassword"
+    smtp_username = "******"
+    smtp_password = "******"
 
     server = smtplib.SMTP(smtp_server, smtp_port)
     server.starttls()

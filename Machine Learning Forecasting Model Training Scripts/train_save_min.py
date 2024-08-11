@@ -22,7 +22,7 @@ core_weather.index = pd.to_datetime(core_weather.index)
 
 # Target variable: next day's minimum temperature
 core_weather["target"] = core_weather["temp_min"].shift(-1)
-core_weather = core_weather.iloc[:-1, :]  # Drop the last row with NaN target
+core_weather = core_weather.iloc[:-1, :]  # Drop the last row (b/c it has no target)
 
 # Rolling and lagged features
 for window in [3, 7, 30]:
